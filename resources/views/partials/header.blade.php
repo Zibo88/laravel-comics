@@ -73,24 +73,25 @@
         </div>
         {{-- HEADER BOTTOM --}}
         <div class="header-bottom">
-             {{-- aggiungo immagine all'header --}}
              <div class="container flex">
+                 {{-- IMG --}}
                 <div class="header-logo">
                     <img class="logo" src="{{asset('img/dc-logo.png')}}" alt="dc-logo">
                 </div>
-    
+                {{-- LINK --}}
                 <div class="menu-container">
                     <ul class="flex">
+                        {{-- creo un ciclo foreach per scorrere i dati dall'array --}}
                         <li class="link">
                             @foreach ($data as $link)
+                            {{-- stampo i dati --}}
                             <a href="">{{$link['name']}}</a> 
                         @endforeach
                         </li>
                         <i id="shop-chevron" class="fa-solid fa-caret-down"></i>
                     </ul>
-                 
                 </div>
-    
+                {{-- SEARCH BARR --}}
                 <div class="search-barr">
                     <input type="text" placeholder="Search">
                     <i class="fa fa-search" aria-hidden="true"></i>

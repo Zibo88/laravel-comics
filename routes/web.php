@@ -15,8 +15,13 @@ use Illuminate\Support\Facades\Route;
 
 // 1) creo la route per la pagina home
 Route::get('/home', function () {
-    return view('home');
-});
+    $comics_array = config('comics');
+
+    $data = [
+        'comics_array' => $comics_array,
+    ];
+    return view('home', $data);
+})->name('home');
 
 // 2)creo la route per la pagina comics_poster
 Route::get('/poster', function (){
