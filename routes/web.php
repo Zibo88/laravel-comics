@@ -15,11 +15,14 @@ use Illuminate\Support\Facades\Route;
 
 // 1) creo la route per la pagina home
 Route::get('/home', function () {
+    // creo una variabile che conterrà i dati necessari
     $comics_array = config('comics');
 
+    // creo l'array associativo che verrà utilizzato nella pagina home
     $data = [
         'comics_array' => $comics_array,
     ];
+    // invio come parametro i data
     return view('home', $data);
 })->name('home');
 
