@@ -11,6 +11,7 @@
 <body>
     {{-- includo la porzione di codice dell'header --}}
     @include('partials.header')
+    
 
     {{-- il main sarà una porzione che continuerà a cambiare di pagina in pagina, metto il segnaposto @yield assegnandogli il nome 'main_content' --}}
     <main>

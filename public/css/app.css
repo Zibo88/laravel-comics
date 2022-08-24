@@ -17,6 +17,14 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+}
+
+header {
+  height: 135px;
+}
+
 .header-top {
   background-color: #0082f9;
   text-align: right;
@@ -28,5 +36,40 @@ a {
 
 .header-top .header-text span {
   padding: 10px;
+}
+
+.header-bottom {
+  padding: 10px 0;
+}
+
+.header-bottom .container.flex {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-bottom .container.flex .logo {
+  width: 90px;
+}
+
+.header-bottom .menu-container {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.header-bottom .menu-container .link a {
+  padding: 5px;
+  color: #496782;
+  cursor: pointer;
+}
+
+.header-bottom .menu-container #shop-chevron {
+  color: #0082f9;
+}
+
+.header-bottom .search-barr input {
+  border: none;
+  text-align: right;
+  border-bottom: 2px solid #0082f9;
+  color: black;
 }
 

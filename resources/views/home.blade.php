@@ -9,9 +9,8 @@
 {{-- richiamo il segnaposto e inserisco il codice che dovrà contenere --}}
 @section('main_content')
 
-<div>
-    ciao
-    ciao
+<div class="jambotron">
+    
 </div>
 @endsection
 

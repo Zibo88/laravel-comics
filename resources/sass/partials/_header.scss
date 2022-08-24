@@ -1,3 +1,7 @@
+header{
+    height: 135px;
+}
+
 .header-top{
     background-color: $main_color;
     text-align: right;
@@ -9,4 +13,40 @@
     .header-text span{
         padding: 10px;
     }
+}
+
+.header-bottom{
+    padding: 10px 0;
+    .container.flex{
+        justify-content: space-between;
+        align-items: center;
+
+        .logo{
+            width: 90px;
+        }
+    }
+
+    .menu-container{
+        font-size: 12px;
+        font-weight: 600;
+
+        .link a{
+            padding: 5px;
+            color: #496782;
+            cursor: pointer;
+        }
+
+        #shop-chevron{
+            color: $main_color;
+        }
+    }
+
+    .search-barr input{
+        border: none;
+        text-align: right;
+        border-bottom: 2px solid $main_color;
+        color: black;
+    }
+
+
 }
