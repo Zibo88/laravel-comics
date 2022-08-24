@@ -14,14 +14,29 @@
     </div>
 
     <div class="comics-container">
-        <div class="container">
-            <div class="card">
-              @foreach ($comics_array as $comics)
-                  {{$comics['title']}}
+        <div class="container flex">
+            @foreach ($comics_array as $comics)
+                <div class="card">
+                    <img class="card-img" src="{{$comics['thumb']}}" alt="{{$comics['title']}}">
+                    <div class="card-title">{{$comics['title']}}</div>
+                </div>
               @endforeach
-            </div>
+        </div>
+
+        <div class='current-series'>
+            CURRENT SERIES
+        </div>
+
+        <div class="comics-container-button">
+            <button class="loading">
+                <a href="#">LOAD MORE</a> 
+            </button>
         </div>
     </div>
+
+    
+
+   
    
 @endsection
 

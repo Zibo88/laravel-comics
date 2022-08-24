@@ -13,6 +13,11 @@
   margin: 0 auto;
 }
 
+img {
+  width: 100%;
+  display: block;
+}
+
 a {
   text-decoration: none;
 }
@@ -49,6 +54,7 @@ header {
 
 .header-bottom .container.flex .logo {
   width: 90px;
+  display: inline-block;
 }
 
 .header-bottom .menu-container {
@@ -76,5 +82,55 @@ header {
 .jambotron .jambotron-img {
   width: 1440px;
   height: 330px;
+}
+
+.comics-container {
+  background-color: #1c1c1c;
+  padding: 60px 0px;
+  position: relative;
+}
+
+.comics-container .container.flex {
+  flex-wrap: wrap;
+}
+
+.comics-container .container.flex .card {
+  width: calc(16.6666666667% - 10px);
+  margin: 5px;
+}
+
+.comics-container .container.flex .card .card-img {
+  height: 170px;
+}
+
+.comics-container .container.flex .card .card-title {
+  color: #ffffff;
+  font-size: 13px;
+  padding: 7px 0;
+}
+
+.comics-container .current-series {
+  position: absolute;
+  top: -20px;
+  left: 126px;
+  background-color: #0082f9;
+  color: #ffffff;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.comics-container .comics-container-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.comics-container .comics-container-button .loading {
+  padding: 7px 10px;
+  background-color: #0082f9;
+  border: none;
+}
+
+.comics-container .comics-container-button .loading a {
+  color: #ffffff;
 }
 
