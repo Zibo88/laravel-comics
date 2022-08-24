@@ -1,4 +1,28 @@
-body {
-  background-color: green;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header-top {
+  background-color: #0082f9;
+  text-align: right;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.header-top .header-text span {
+  padding: 10px;
 }
 

@@ -1,0 +1,12 @@
+.header-top{
+    background-color: $main_color;
+    text-align: right;
+    text-transform: uppercase;
+    color: $text_color_white;
+    font-size: 12px;
+    padding: 5px;
+
+    .header-text span{
+        padding: 10px;
+    }
+}

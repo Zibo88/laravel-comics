@@ -1,5 +1,5 @@
 //
 
-body{
-    background-color: green;
-}
+@import 'partials/common';
+@import 'partials/variables';
+@import 'partials/header'
