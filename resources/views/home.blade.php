@@ -17,6 +17,7 @@
     <div class="comics-container">
         <div class="container flex">
             {{-- CARD --}}
+            {{-- analizzo l'array inserito nei data in route home --}}
             @foreach ($comics_array as $comics)
                 <div class="card">
                     <img class="card-img" src="{{$comics['thumb']}}" alt="{{$comics['title']}}">
@@ -38,6 +39,7 @@
         </div>
     </div>
 
+    {{-- SECTION BUY --}}
     <div class="section-buy">
         <div class="container">
             <ul class="section-buy-list flex">
