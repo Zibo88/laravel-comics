@@ -7,8 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-
     @include('partials.header')
-    
+
 </body>
 </html>
