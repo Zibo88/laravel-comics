@@ -160,3 +160,81 @@ header {
   padding-left: 20px;
 }
 
+footer {
+  background-color: #303030;
+}
+
+.container .footer.flex {
+  overflow: hidden;
+}
+
+.container .col {
+  width: 10%;
+}
+
+.container .col h4 {
+  color: white;
+  padding: 10px;
+}
+
+.container .col li {
+  padding: 5px 10px;
+}
+
+.container .col li a {
+  color: #62788a;
+  font-size: 13px;
+}
+
+.container .col ul li:hover a {
+  color: white;
+}
+
+.container .footer-img {
+  width: 38%;
+  position: relative;
+}
+
+.container .footer-img img {
+  position: absolute;
+  top: -45px;
+  right: -296px;
+}
+
+.container .footer-bottom.flex {
+  height: 80px;
+  background-color: #303030;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.container .footer-bottom.flex button {
+  border: none;
+}
+
+.container .btn {
+  color: white;
+  border: 2px solid #0082f9;
+  padding: 10px;
+  font-size: 13px;
+  background-color: #303030;
+  font-weight: 700;
+}
+
+.container .social-list {
+  align-items: center;
+  padding-left: 20px;
+}
+
+.container .social {
+  width: 45px;
+  padding: 0 5px;
+}
+
+.container h3 {
+  color: #0082f9;
+  font-size: 15px;
+  line-height: 80px;
+}
+
