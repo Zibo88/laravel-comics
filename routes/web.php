@@ -21,4 +21,4 @@ Route::get('/home', function () {
 // 2)creo la route per la pagina comics_poster
 Route::get('/poster', function (){
     return view('comics_poster');
-});
+})->name('poster');
