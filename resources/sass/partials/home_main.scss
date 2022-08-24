@@ -59,6 +59,33 @@
     }
 }
 
+// section buy
+
+.section-buy{
+    background-color: $main_color;
+    .container{
+        padding: 20px 0px;
+
+        .section-buy-list.flex{
+            justify-content: space-between;
+            .section-buy-item.flex{
+                align-items: center;
+                text-align: center;
+
+                img{
+                    width: 60px;
+                }
+
+                .section-buy-text{
+                    color: $text_color_white;
+                    padding-left: 20px;
+
+                }
+            }
+        }
+    }
+
+}
 
 
 

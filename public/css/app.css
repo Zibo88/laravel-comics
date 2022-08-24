@@ -134,3 +134,29 @@ header {
   color: #ffffff;
 }
 
+.section-buy {
+  background-color: #0082f9;
+}
+
+.section-buy .container {
+  padding: 20px 0px;
+}
+
+.section-buy .container .section-buy-list.flex {
+  justify-content: space-between;
+}
+
+.section-buy .container .section-buy-list.flex .section-buy-item.flex {
+  align-items: center;
+  text-align: center;
+}
+
+.section-buy .container .section-buy-list.flex .section-buy-item.flex img {
+  width: 60px;
+}
+
+.section-buy .container .section-buy-list.flex .section-buy-item.flex .section-buy-text {
+  color: #ffffff;
+  padding-left: 20px;
+}
+
