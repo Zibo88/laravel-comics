@@ -1,4 +1,6 @@
+{{-- estendo il layout alle varie pagine --}}
 @extends('layout.app')
+
 
 @section('main_content')
 
