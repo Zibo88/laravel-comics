@@ -238,3 +238,87 @@ footer {
   line-height: 80px;
 }
 
+.single {
+  padding-top: 345px;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.single .blu-line {
+  height: 90px;
+  width: 100%;
+  background-color: #0082f9;
+  color: #0082f9;
+  position: absolute;
+  top: 265px;
+}
+
+.container {
+  position: relative;
+  padding: 5px;
+}
+
+.container .single-img {
+  position: absolute;
+  width: 140px;
+  top: -250px;
+  left: 180px;
+}
+
+.container .container-info.flex {
+  width: 70%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.container .container-info.flex .single-comics-info {
+  width: 75%;
+}
+
+.container .container-info.flex .single-comics-info h1 {
+  font-size: 24px;
+  padding: 10px 0;
+}
+
+.container .container-info.flex .single-comics-info .info-shop .container-price-status.flex {
+  justify-content: space-between;
+  width: 77%;
+  background-color: #53ba57;
+  border-right: 1px solid #3c8841;
+  border-bottom: 1px solid #3c8841;
+}
+
+.container .container-info.flex .single-comics-info .info-shop .container-price-status.flex .price,
+.container .container-info.flex .single-comics-info .info-shop .container-price-status.flex .status {
+  padding: 8px 18px;
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.container .container-info.flex .single-comics-info .info-shop .check-availability a {
+  padding: 8px;
+  font-size: 13px;
+  color: #ffffff;
+  background-color: #53ba57;
+  border-bottom: 1px solid #3c8841;
+  display: inline-block;
+}
+
+.container .container-info.flex .single-comics-info .info-shop .check-availability a:hover {
+  color: #0082f9;
+}
+
+.container .container-info.flex .single-comics-info .description {
+  padding: 10px 0;
+  font-size: 13px;
+  color: #7a6e75;
+}
+
+.container .container-info.flex .advertiment {
+  width: 25%;
+  text-align: end;
+  color: #7a6e75;
+  font-size: 13px;
+  padding: 5px 0;
+}
+

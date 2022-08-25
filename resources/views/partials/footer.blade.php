@@ -1,4 +1,4 @@
-{{-- porzione di codice relativo al footer --}}
+
 <footer>
     <div class="container">
         <div class="footer flex">

@@ -1,0 +1,91 @@
+.single{
+    padding-top: 345px;
+    padding-bottom: 5px;
+    position: relative;
+    
+
+    .blu-line{
+        height: 90px;
+        width: 100%;
+        background-color: $main_color;
+        color: $main_color;
+        position: absolute;
+        top: 265px;
+     
+    }
+}
+
+.container{
+    position: relative;
+    padding: 5px;
+    .single-img{
+        position: absolute;
+        width: 140px;
+        top: -250px;
+        left: 180px;
+    }
+    // container-info
+    .container-info.flex{
+        width: 70%;
+        margin: 0 auto;
+        justify-content: space-between;
+
+        .single-comics-info{
+            width: 75%;
+            h1{
+                font-size: 24px;
+                padding: 10px 0;
+            }
+
+            .info-shop{
+      
+                .container-price-status.flex{
+                    justify-content: space-between;
+                    width: 77%;
+                    background-color: #53ba57;
+                    border-right: 1px solid #3c8841;
+                    border-bottom: 1px solid #3c8841;
+
+                    .price, .status{
+                        padding: 8px 18px;
+                        color: $text_color_white;
+                        font-size: 13px;
+                    }  
+                }
+
+                .check-availability a{
+                    padding: 8px;
+                    font-size: 13px;
+                    color: $text_color_white;
+                    background-color: #53ba57;
+                    border-bottom: 1px solid #3c8841;
+                    display: inline-block;
+
+                    &:hover{
+                        color: $main_color;
+                    }
+                }
+            }
+
+            .description{
+                padding: 10px 0;
+                font-size: 13px;
+                color: $text_comics
+            }
+        }
+
+        .advertiment{
+            width: 25%;
+            text-align: end;
+            color: $text_comics;
+            font-size: 13px;
+            padding: 5px 0;
+        }
+       
+        
+    }
+
+    
+    
+}
+

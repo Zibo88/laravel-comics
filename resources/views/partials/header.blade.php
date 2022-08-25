@@ -99,6 +99,10 @@
              </div>
         </div>
        
+         {{-- immagine del jambotron --}}
+    <div class="jambotron">
+        <img class="jambotron-img" src="{{asset('img/jumbotron.jpg')}}" alt="jumbotron-img">
+    </div>
    
 
     <div>

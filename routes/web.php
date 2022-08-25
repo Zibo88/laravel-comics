@@ -32,10 +32,19 @@ Route::get('/poster/{id}', function ($id){
     // controlliamo il valore di $id
     // dd($id);
     $comics_array = config('comics');
-   
 
+    // creo un array vuoto
+    $current_comics = [];
+
+    // avvio un ciclo foreach per analizzare ogni singolo elemento all'interno di $comics_array
+    foreach($comics_array as $single_comics){
+      if($single_comics['id'] == $id){
+          $current_comics[] = $single_comics;
+      }
+    };
+    
     $data = [
-        'comics_array' => $comics_array
+        'current_comics' => $current_comics
     ];
     return view('comics_poster',$data);
 })->name('poster');
