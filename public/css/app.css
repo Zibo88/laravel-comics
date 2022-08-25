@@ -317,7 +317,7 @@ footer {
 }
 
 .container .container-info.flex .single-comics-info .description {
-  padding: 10px 0;
+  padding: 10px 10px 0 0;
   font-size: 13px;
   color: #7a6e75;
 }
@@ -338,6 +338,7 @@ footer {
 .container .container-exposure.flex .title {
   padding: 0 0 10px 0;
   color: #264e63;
+  font-size: 15px;
 }
 
 .container .container-exposure.flex .col-left {

@@ -125,9 +125,7 @@
                            </div>
 
                            <div class="speces-price">
-                                <a href="#">
                                     {{$single['price']}}
-                                </a>   
                             </div>
                         </div>
 
@@ -137,9 +135,7 @@
                            </div>
 
                            <div class="speces-price">
-                                <a href="#">
-                                    {{ $single['sale_date']}}
-                                </a>   
+                                    {{ $single['sale_date']}}   
                             </div>
                         </div>
 
