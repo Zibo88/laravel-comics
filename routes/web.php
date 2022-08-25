@@ -27,6 +27,15 @@ Route::get('/home', function () {
 })->name('home');
 
 // 2)creo la route per la pagina comics_poster
-Route::get('/poster', function (){
-    return view('comics_poster');
+// Per permettere di collegare l'id alla selezione dell'utente, inseriamo /{id} come argomento e poi lo riutilizziamo come variabile all'interno di funtion
+Route::get('/poster/{id}', function ($id){
+    // controlliamo il valore di $id
+    // dd($id);
+    $comics_array = config('comics');
+   
+
+    $data = [
+        'comics_array' => $comics_array
+    ];
+    return view('comics_poster',$data);
 })->name('poster');
