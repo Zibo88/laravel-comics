@@ -85,6 +85,20 @@
         
     }
 
+    .container-exposure.flex{
+        width: 70%;
+        margin: 0 auto;
+         .label{
+            padding-right: 10px;
+         }
+
+        .col-left, .col-right{
+            width: 50%;
+            font-size: 13px;
+        }
+
+      
+    }
     
     
 }

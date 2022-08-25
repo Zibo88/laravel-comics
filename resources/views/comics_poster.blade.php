@@ -23,42 +23,80 @@
                 <img src="{{$single['thumb']}}" alt="{{$single['title']}}">
             </div>  
 
-            <div class="container-info flex">
-                <div class="single-comics-info">
-                    <h1>{{$single['title']}}</h1>
-                    <div class="info-shop flex">
-                        <div class="container-price-status flex">
-                            {{-- PRICE --}}
-                            <div class="price">
-                                <span>U.S. Price:</span>
-                                <span>{{$single['price']}}</span>
+            <section>
+                <div class="container-info flex">
+                    <div class="single-comics-info">
+                        <h1>{{$single['title']}}</h1>
+                        <div class="info-shop flex">
+                            <div class="container-price-status flex">
+                                {{-- PRICE --}}
+                                <div class="price">
+                                    <span>U.S. Price:</span>
+                                    <span>{{$single['price']}}</span>
+                                </div>
+                               
+                                {{-- STATUS --}}
+                                <div class="status">
+                                    AVAILABLE
+                                </div>
+                            </div>
+    
+                            <div class="check-availability">
+                                    <a href="#">
+                                        Check Availability  <i class="fa-solid fa-caret-down"></i>
+                                    </a>
                             </div>
                            
-                            {{-- STATUS --}}
-                            <div class="status">
-                                AVAILABLE
-                            </div>
-                        </div>
-
-                        <div class="check-availability">
-                                <a href="#">
-                                    Check Availability  <i class="fa-solid fa-caret-down"></i>
-                                </a>
                         </div>
                        
+                        <p class="description">
+                            {{$single['description']}}
+                        </p>
+                        
                     </div>
-                   
-                    <p class="description">
-                        {{$single['description']}}
-                    </p>
-                    
+    
+                    <div class="advertiment">
+                       ADVERTISIMENT
+                        <img src="{{asset('img/adv.jpg')}}" alt="advertisiment-img">
+                    </div>
                 </div>
+            </section>
+            
+            <section class="exposure">
+                <div class="container-exposure flex">
 
-                <div class="advertiment">
-                   ADVERTISIMENT
-                    <img src="{{asset('img/adv.jpg')}}" alt="advertisiment-img">
+                    {{-- colonna sx--}}
+                    <div class="col-left">
+                       <h2 class="title">Talent</h2>
+                       <div class="participation">
+                            <div class="artist flex">
+                                <div class="label">
+                                    Art by:
+                                </div>
+                                {{-- dato che gli artisti sono a loro volta un array, eseguo un ciclo foreach del singolo elemento però riferendomi solo all'array artist. --}}
+                                <div class="artists-name">
+                                    <a href="#">
+                                        @foreach($single['artists'] as $artist)
+                                        {{$artist}}@if(!$loop->last),@endif
+                                    @endforeach
+                                    </a>
+                                   
+                                </div>
+                                
+                            </div>
+                       </div>
+                    </div>
+
+                    {{-- colonna dx --}}
+                    <div class="col-right">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque impedit repellat totam ea aut quidem consectetur repellendus fuga voluptates natus. Eligendi pariatur corrupti itaque earum consectetur esse sed? Est, incidunt!
+                    </div>
+
                 </div>
-            </div>
+            </section>
+
+
+           
            
         @endforeach
     </div>

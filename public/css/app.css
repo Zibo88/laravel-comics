@@ -322,3 +322,18 @@ footer {
   padding: 5px 0;
 }
 
+.container .container-exposure.flex {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.container .container-exposure.flex .label {
+  padding-right: 10px;
+}
+
+.container .container-exposure.flex .col-left,
+.container .container-exposure.flex .col-right {
+  width: 50%;
+  font-size: 13px;
+}
+
