@@ -12,7 +12,9 @@
     .container.flex{
         flex-wrap: wrap;
        
-    
+        .route-link{
+            display: contents;
+        }
         .card{
             width: calc((100% / 6 ) - 10px );
             margin: 5px;

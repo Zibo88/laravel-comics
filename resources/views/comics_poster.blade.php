@@ -23,7 +23,8 @@
                 <img src="{{$single['thumb']}}" alt="{{$single['title']}}">
             </div>  
 
-            <section>
+            {{-- BUY --}}
+            <section class="buy">
                 <div class="container-info flex">
                     <div class="single-comics-info">
                         <h1>{{$single['title']}}</h1>
@@ -62,6 +63,7 @@
                 </div>
             </section>
             
+            {{-- EXPOSURE --}}
             <section class="exposure">
                 <div class="container-exposure flex">
 
@@ -69,6 +71,7 @@
                     <div class="col-left">
                        <h2 class="title">Talent</h2>
                        <div class="participation">
+                           {{-- ARTISTI --}}
                             <div class="artist flex">
                                 <div class="label">
                                     Art by:
@@ -80,16 +83,68 @@
                                         {{$artist}}@if(!$loop->last),@endif
                                     @endforeach
                                     </a>
-                                   
                                 </div>
-                                
+                            </div>
+
+                            {{-- Sceneggiatori --}}
+                            <div class="writers flex">
+                                <div class="label">
+                                    Written by:
+                                </div>
+
+                                <div class="writers-name">
+                                    <a href="#">
+                                        @foreach($single['writers'] as $writer)
+                                        {{$writer}}@if(!$loop->last),@endif
+                                    @endforeach
+                                    </a>
+                                </div>
+
                             </div>
                        </div>
                     </div>
 
                     {{-- colonna dx --}}
                     <div class="col-right">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque impedit repellat totam ea aut quidem consectetur repellendus fuga voluptates natus. Eligendi pariatur corrupti itaque earum consectetur esse sed? Est, incidunt!
+                        <h2 class="title"> SPECES </h2>
+
+                        <div class="series flex">
+                           <div class="label">
+                                Series
+                           </div>
+                           <div class="series-name">
+                               <a href="#">
+                                    {{$single['series']}}
+                               </a>   
+                           </div>
+                        </div>
+
+                        <div class="speces-to-buy flex">
+                            <div class="label">
+                                U.S. Price:
+                           </div>
+
+                           <div class="speces-price">
+                                <a href="#">
+                                    {{$single['price']}}
+                                </a>   
+                            </div>
+                        </div>
+
+                        <div class="speces-to-buy flex">
+                            <div class="label">
+                                On Sale Date:
+                           </div>
+
+                           <div class="speces-price">
+                                <a href="#">
+                                    {{ $single['sale_date']}}
+                                </a>   
+                            </div>
+                        </div>
+
+
+
                     </div>
 
                 </div>
