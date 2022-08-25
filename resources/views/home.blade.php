@@ -20,14 +20,15 @@
             {{-- analizzo l'array inserito nei data in route home --}}
            
             @foreach ($comics_array as $comics)
-            {{-- <a class="route-link" href="{{route ('poster',[
+            {{-- permette di selezionare, al click, il fumetto scelto che comparirà nella pagina poster/id --}}
+            <a class="route-link" href="{{route ('poster',[
                 'id' => $comics['id']
-                ])}}"> --}}
+                ])}}">
              <div class="card">
                  <img class="card-img" src="{{$comics['thumb']}}" alt="{{$comics['title']}}">
                  <div class="card-title">{{$comics['title']}}</div>
              </div>
-            {{-- </a> --}}
+            </a>
            @endforeach
        
            
