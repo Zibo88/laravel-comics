@@ -62,95 +62,95 @@
                     </div>
                 </div>
             </section>
-            
-            {{-- EXPOSURE --}}
-            <section class="exposure">
-                <div class="container-exposure flex">
-
-                    {{-- colonna sx--}}
-                    <div class="col-left">
-                       <h2 class="title">Talent</h2>
-                       <div class="participation">
-                           {{-- ARTISTI --}}
-                            <div class="artist flex">
-                                <div class="label">
-                                    Art by:
-                                </div>
-                                {{-- dato che gli artisti sono a loro volta un array, eseguo un ciclo foreach del singolo elemento però riferendomi solo all'array artist. --}}
-                                <div class="artists-name">
-                                    <a href="#">
-                                        @foreach($single['artists'] as $artist)
-                                        {{$artist}}@if(!$loop->last),@endif
-                                    @endforeach
-                                    </a>
-                                </div>
-                            </div>
-
-                            {{-- Sceneggiatori --}}
-                            <div class="writers flex">
-                                <div class="label">
-                                    Written by:
-                                </div>
-
-                                <div class="writers-name">
-                                    <a href="#">
-                                        @foreach($single['writers'] as $writer)
-                                        {{$writer}}@if(!$loop->last),@endif
-                                    @endforeach
-                                    </a>
-                                </div>
-
-                            </div>
-                       </div>
-                    </div>
-
-                    {{-- colonna dx --}}
-                    <div class="col-right">
-                        <h2 class="title"> SPECES </h2>
-
-                        <div class="series flex">
-                           <div class="label">
-                                Series
-                           </div>
-                           <div class="series-name">
-                               <a href="#">
-                                    {{$single['series']}}
-                               </a>   
-                           </div>
-                        </div>
-
-                        <div class="speces-to-buy flex">
-                            <div class="label">
-                                U.S. Price:
-                           </div>
-
-                           <div class="speces-price">
-                                    {{$single['price']}}
-                            </div>
-                        </div>
-
-                        <div class="speces-to-buy flex">
-                            <div class="label">
-                                On Sale Date:
-                           </div>
-
-                           <div class="speces-price">
-                                    {{ $single['sale_date']}}   
-                            </div>
-                        </div>
-
-
-
-                    </div>
-
-                </div>
-            </section>
-
-
-           
-           
         @endforeach
+
+        
     </div>
+
+     {{-- EXPOSURE --}}
+    
+     <section class="exposure">
+        <div class="container-exposure flex">
+
+            {{-- colonna sx--}}
+            <div class="col-left">
+               <h2 class="title">Talent</h2>
+               <div class="participation">
+                   {{-- ARTISTI --}}
+                    <div class="artist flex">
+                        <div class="label">
+                            Art by:
+                        </div>
+                        {{-- dato che gli artisti sono a loro volta un array, eseguo un ciclo foreach del singolo elemento però riferendomi solo all'array artist. --}}
+                        <div class="artists-name">
+                            <a href="#">
+                                @foreach($single['artists'] as $artist)
+                                {{$artist}}@if(!$loop->last),@endif
+                            @endforeach
+                            </a>
+                        </div>
+                    </div>
+
+                    {{-- Sceneggiatori --}}
+                    <div class="writers flex">
+                        <div class="label">
+                            Written by:
+                        </div>
+
+                        <div class="writers-name">
+                            <a href="#">
+                                @foreach($single['writers'] as $writer)
+                                {{$writer}}@if(!$loop->last),@endif
+                            @endforeach
+                            </a>
+                        </div>
+
+                    </div>
+               </div>
+            </div>
+
+            {{-- colonna dx --}}
+            <div class="col-right">
+                <h2 class="title"> Speces </h2>
+
+                <div class="series flex">
+                   <div class="label">
+                        Series
+                   </div>
+                   <div class="series-name">
+                       <a href="#">
+                            {{$single['series']}}
+                       </a>   
+                   </div>
+                </div>
+
+                <div class="speces-to-buy flex">
+                    <div class="label">
+                        U.S. Price:
+                   </div>
+
+                   <div class="speces-price">
+                            {{$single['price']}}
+                    </div>
+                </div>
+
+                <div class="speces-to-buy flex">
+                    <div class="label">
+                        On Sale Date:
+                   </div>
+
+                   <div class="speces-price">
+                            {{ $single['sale_date']}}   
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </section>
+  
   
 @endsection
 

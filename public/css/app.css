@@ -105,6 +105,8 @@ header {
 
 .comics-container .container.flex .card .card-img {
   height: 170px;
+  -o-object-position: top;
+     object-position: top;
 }
 
 .comics-container .container.flex .card .card-title {
@@ -330,60 +332,65 @@ footer {
   padding: 5px 0;
 }
 
-.container .container-exposure.flex {
-  width: 70%;
-  margin: 0 auto;
+.exposure {
+  background-color: #f6f6f6;
 }
 
-.container .container-exposure.flex .title {
-  padding: 0 0 10px 0;
+.exposure .container-exposure.flex {
+  width: 55%;
+  margin: 0 auto;
+  background-color: #f6f6f6;
+}
+
+.exposure .container-exposure.flex .title {
+  padding: 10px 0 10px 0;
   color: #264e63;
   font-size: 15px;
 }
 
-.container .container-exposure.flex .col-left {
+.exposure .container-exposure.flex .col-left {
   padding-right: 20px;
 }
 
-.container .container-exposure.flex .participation {
+.exposure .container-exposure.flex .participation {
   padding-right: 15px;
 }
 
-.container .container-exposure.flex .participation .artist.flex {
+.exposure .container-exposure.flex .participation .artist.flex {
   border-top: 1px solid #e6e6e6;
   padding: 15px 0;
   border-bottom: 1px solid #e6e6e6;
 }
 
-.container .container-exposure.flex .participation .label {
+.exposure .container-exposure.flex .participation .label {
   padding-right: 10px;
   color: #264e63;
   width: 40%;
 }
 
-.container .container-exposure.flex .writers.flex {
+.exposure .container-exposure.flex .writers.flex {
   padding: 10px 0;
   border-bottom: 1px solid #e6e6e6;
 }
 
-.container .container-exposure.flex .col-left,
-.container .container-exposure.flex .col-right {
+.exposure .container-exposure.flex .col-left,
+.exposure .container-exposure.flex .col-right {
   width: 50%;
   font-size: 13px;
 }
 
-.container .container-exposure.flex .col-right {
+.exposure .container-exposure.flex .col-right {
   padding-left: 20px;
 }
 
-.container .container-exposure.flex .series.flex {
+.exposure .container-exposure.flex .series.flex {
   border-top: 1px solid #e6e6e6;
   padding: 15px;
   border-bottom: 1px solid #e6e6e6;
   justify-content: space-between;
 }
 
-.container .container-exposure.flex .speces-to-buy.flex {
+.exposure .container-exposure.flex .speces-to-buy.flex {
   padding: 15px;
   justify-content: space-between;
   border-bottom: 1px solid #e6e6e6;

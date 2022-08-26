@@ -2,7 +2,7 @@
     padding-top: 345px;
     padding-bottom: 5px;
     position: relative;
-    
+
 
     .blu-line{
         height: 90px;
@@ -11,7 +11,7 @@
         color: $main_color;
         position: absolute;
         top: 265px;
-     
+
     }
 }
 .buy{
@@ -41,7 +41,7 @@
             }
 
             .info-shop{
-      
+
                 .container-price-status.flex{
                     justify-content: space-between;
                     width: 77%;
@@ -53,7 +53,7 @@
                         padding: 8px 18px;
                         color: $text_color_white;
                         font-size: 13px;
-                    }  
+                    }
                 }
 
                 .check-availability a{
@@ -73,7 +73,7 @@
             .description{
                 padding: 10px 10px 0 0;
                 font-size: 13px;
-                color: $text_comics
+                color: $text_comics;
             }
         }
 
@@ -84,21 +84,27 @@
             font-size: 13px;
             padding: 5px 0;
         }
-       
-        
+
+
     }
 
-    // SEZIONE EXPOSURE
-    .container-exposure.flex{
-        width: 70%;
-        margin: 0 auto;
+}   
 
-        .title{
-            padding: 0 0 10px 0;
+// SEZIONE EXPOSURE
+.exposure{
+    background-color: #f6f6f6;
+
+    .container-exposure.flex{
+        width: 55%;
+        margin: 0 auto;
+        background-color: #f6f6f6;
+
+         .title{
+            padding: 10px 0 10px 0;
             color: #264e63;
             font-size: 15px;
         }
-
+        // COLONNA SX
         .col-left{
             padding-right: 20px;
         }
@@ -115,19 +121,20 @@
                 color:#264e63;
                 width: 40%;
             }
-    
+
         }
 
         .writers.flex{
             padding: 10px 0;
             border-bottom: 1px solid $section_exposure_border_color;
         }
-       
+
 
         .col-left, .col-right{
             width: 50%;
             font-size: 13px;
         }
+        
         // COLONNA DX
         .col-right{
             padding-left: 20px;
@@ -146,7 +153,8 @@
             border-bottom: 1px solid $section_exposure_border_color;
         }
     }
-    
-    
+
+
 }
+
 
