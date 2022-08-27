@@ -88,16 +88,16 @@
 
     }
 
-}   
+}
 
 // SEZIONE EXPOSURE
 .exposure{
-    background-color: #f6f6f6;
+    background-color: $section_exposure_bcg_color;
 
     .container-exposure.flex{
         width: 55%;
         margin: 0 auto;
-        background-color: #f6f6f6;
+        background-color: $section_exposure_bcg_color;
 
          .title{
             padding: 10px 0 10px 0;
@@ -134,7 +134,7 @@
             width: 50%;
             font-size: 13px;
         }
-        
+
         // COLONNA DX
         .col-right{
             padding-left: 20px;
@@ -154,7 +154,56 @@
         }
     }
 
+    .exposure-commodity{
+        border-top: 1px solid $section_exposure_border_color;
+        margin-top: 50px;
+
+        .commodity-list-container{
+            width: 55%;
+            margin: 0 auto;
+        }
+
+        .commodity-list.flex{
+            justify-content: space-between;
+            :last-child{
+                border-right: 1px solid $section_exposure_border_color;
+            }
+            .commodity-item{
+                padding: 7px;
+                width: calc(100% / 4);
+                border-left: 1px solid $section_exposure_border_color;
+                
+
+                .commodity-link.flex{
+                    justify-content: space-between;
+                   
+                   
+                    .commodity-link-text{
+                        font-size: 12px;
+                        color: #d8d8d8;
+
+                    }
+
+                    .commodity-img{
+                        width: 20%;
+                        background-color: #d8d8d8;
+                        display: inline-block;
+                    }
+
+                }
+
+
+
+            }
+        }
+
+
+
+    }
+
 
 }
+
+
 
 

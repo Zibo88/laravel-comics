@@ -396,3 +396,42 @@ footer {
   border-bottom: 1px solid #e6e6e6;
 }
 
+.exposure .exposure-commodity {
+  border-top: 1px solid #e6e6e6;
+  margin-top: 50px;
+}
+
+.exposure .exposure-commodity .commodity-list-container {
+  width: 55%;
+  margin: 0 auto;
+}
+
+.exposure .exposure-commodity .commodity-list.flex {
+  justify-content: space-between;
+}
+
+.exposure .exposure-commodity .commodity-list.flex :last-child {
+  border-right: 1px solid #e6e6e6;
+}
+
+.exposure .exposure-commodity .commodity-list.flex .commodity-item {
+  padding: 7px;
+  width: 25%;
+  border-left: 1px solid #e6e6e6;
+}
+
+.exposure .exposure-commodity .commodity-list.flex .commodity-item .commodity-link.flex {
+  justify-content: space-between;
+}
+
+.exposure .exposure-commodity .commodity-list.flex .commodity-item .commodity-link.flex .commodity-link-text {
+  font-size: 12px;
+  color: #d8d8d8;
+}
+
+.exposure .exposure-commodity .commodity-list.flex .commodity-item .commodity-link.flex .commodity-img {
+  width: 20%;
+  background-color: #d8d8d8;
+  display: inline-block;
+}
+

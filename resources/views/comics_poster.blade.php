@@ -70,6 +70,8 @@
      {{-- EXPOSURE --}}
     
      <section class="exposure">
+
+        {{-- container della tabella --}}
         <div class="container-exposure flex">
 
             {{-- colonna sx--}}
@@ -85,8 +87,8 @@
                         <div class="artists-name">
                             <a href="#">
                                 @foreach($single['artists'] as $artist)
-                                {{$artist}}@if(!$loop->last),@endif
-                            @endforeach
+                                    {{$artist}}@if(!$loop->last),@endif
+                                @endforeach
                             </a>
                         </div>
                     </div>
@@ -100,8 +102,8 @@
                         <div class="writers-name">
                             <a href="#">
                                 @foreach($single['writers'] as $writer)
-                                {{$writer}}@if(!$loop->last),@endif
-                            @endforeach
+                                    {{$writer}}@if(!$loop->last),@endif
+                                @endforeach
                             </a>
                         </div>
 
@@ -143,13 +145,57 @@
                             {{ $single['sale_date']}}   
                     </div>
                 </div>
-
-
-
             </div>
+        </div>
 
+        <div class="exposure-commodity">
+            <div class="commodity-list-container">
+                <ul class="commodity-list flex">
+                    <li class="commodity-item">
+                        <a class="commodity-link flex" href="#">
+                            <div class="commodity-link-text" >
+                                Digital Comics
+                            </div>
+
+                            <img class="commodity-img" src="{{asset('img/buy-comics-digital-comics.png')}}" alt="digital-comics-img">
+                        </a>
+                    </li>
+
+                    <li class="commodity-item">
+                        <a class="commodity-link flex" href="#">
+                            <div class="commodity-link-text">
+                                Merchandise
+                            </div>
+
+                            <img class="commodity-img" src="{{asset('img/buy-comics-merchandise.png')}}" alt="merchandise-img">
+                        </a>
+                    </li>
+
+                    <li class="commodity-item">
+                        <a class="commodity-link flex" href="#">
+                            <div class="commodity-link-text">
+                               Shop
+                            </div>
+
+                            <img class="commodity-img" src="{{asset('img/buy-comics-shop-locator.png')}}" alt="shop-img">
+                        </a>
+                    </li>
+
+                    <li class="commodity-item">
+                        <a class="commodity-link flex" href="#">
+                            <div class="commodity-link-text">
+                                Subscriptions
+                            </div>
+
+                            <img class="commodity-img" src="{{asset('img/buy-comics-subscriptions.png')}}" alt="subscriptions-img">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
+
+   
   
   
 @endsection
